@@ -1,0 +1,46 @@
+/* Use this style sheet to display products */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .productImage {
+    width: 350px;
+  }
+  
+  .priceFlex {
+    display: flex;
+  }
+  
+  .productPrice {
+    background-color: #ffe800;
+    margin-left: 0.6rem;
+    padding: 5px;
+    font-weight: lighter;
+    font-size: 0.8rem;
+  }
+  .productStrikedPrice {
+    text-decoration: line-through;
+    font-weight: lighter;
+    padding: 5px 0;
+    font-size: 0.7rem;
+  }
+  
+  .productTitle {
+    margin: 1rem 0 3px 0;
+    text-align: left;
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+  
+  .box {
+    margin: 7rem 0 2rem 0;
+  }

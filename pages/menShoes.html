@@ -1,0 +1,62 @@
+<!-- Men Shoes -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Men Shoes</title>
+    <link
+      rel="icon"
+      href="https://w7.pngwing.com/pngs/39/910/png-transparent-zara-fashion-clothes-clothing-brands-and-logos-icon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../styles/renderProducts.css" />
+  </head>
+  <body>
+    <nav id="navbar"></nav>
+    <div id="container"></div>
+  </body>
+</html>
+
+<script src="../data/shoesData.js"></script>
+<script>
+  let shoesDatas = JSON.parse(localStorage.getItem("shoesData"));
+  let menShoesData = shoesDatas.filter(function (elem) {
+    return elem.itemGender == "Men";
+  });
+
+  menShoesData.map(function (elem) {
+    let div = document.createElement("div");
+    div.setAttribute("class", "box");
+
+    let image = document.createElement("img");
+    image.setAttribute("src", elem.imageURL);
+    image.setAttribute("class", "productImage");
+
+    image.addEventListener("click", function () {
+      localStorage.setItem("product", JSON.stringify(elem));
+      window.location.href = "../pages/productDesc.html";
+    });
+
+    let title = document.createElement("p");
+    title.textContent = elem.productName;
+    title.setAttribute("class", "productTitle");
+
+    let price = document.createElement("p");
+    price.textContent = elem.price;
+    price.setAttribute("class", "productPrice");
+
+    let striked = document.createElement("h5");
+    striked.textContent = elem.strikedPrice;
+    striked.setAttribute("class", "productStrikedPrice");
+
+    let price_div = document.createElement("div");
+    price_div.setAttribute("class", "priceFlex");
+    price_div.append(striked, price);
+
+    div.append(image, title, price_div);
+    document.querySelector("#container").append(div);
+  });
+</script>
