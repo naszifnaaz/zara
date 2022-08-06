@@ -13,6 +13,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="../styles/renderProducts.css" />
+    <link rel="stylesheet" href="../styles/navbar.css" />
   </head>
   <body>
     <nav id="navbar"></nav>
@@ -21,7 +22,11 @@
 </html>
 
 <script src="../data/shoesData.js"></script>
-<script>
+<script type="module">
+  import navbar from "../scripts/navbar.js";
+  let nav_container = document.getElementById("navbar");
+  nav_container.innerHTML = navbar();
+
   let shoesDatas = JSON.parse(localStorage.getItem("shoesData"));
   let menShoesData = shoesDatas.filter(function (elem) {
     return elem.itemGender == "Men";
