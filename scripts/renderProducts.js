@@ -1,7 +1,6 @@
 //Render Products to DOM
 
 function renderProducts(globalData, query) {
-    console.log(query);
     if (query) {
         globalData = globalData.filter(function (elem) {
             return elem.itemCategory == query;

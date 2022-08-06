@@ -11,6 +11,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="../styles/renderProducts.css" />
+    <link rel="stylesheet" href="../styles/navbar.css" />
   </head>
   <body>
     <nav id="navbar"></nav>
@@ -20,6 +21,10 @@
 
 <script src="../data/girlData.js"></script>
 <script type="module">
+  import navbar from "../scripts/navbar.js";
+  let nav_container = document.getElementById("navbar");
+  nav_container.innerHTML = navbar();
+
   import renderProducts from "../scripts/renderProducts.js";
   let girlData = JSON.parse(localStorage.getItem("girlData"));
   renderProducts(girlData, "");
