@@ -1,0 +1,88 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #cartContainer {
+    display: flex;
+    height: 450px;
+    margin-left: 30px;
+    overflow-x: scroll;
+  }
+  #boxes {
+    min-width: 390px;
+    margin-right: 50px;
+  }
+  #avatar {
+    height: 430px;
+    margin-left: -10px;
+  }
+  #item {
+    display: flex;
+    margin-left: 20px;
+  }
+  #del {
+    margin-top: 180px;
+    margin-left: 10px;
+    font-size: 12px;
+    color: grey;
+    cursor: pointer;
+  }
+  #cost {
+    margin-top: 150px;
+    margin-left: 10px;
+    font-size: 12px;
+    position: relative;
+    color: grey;
+  }
+  #productName,
+  #ref {
+    margin-left: 10px;
+    font-size: 10px;
+    color: rgb(49, 49, 49);
+    margin-bottom: 0px;
+  }
+  h3 {
+    margin-left: 30px;
+  }
+  #cartContainer2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-top: 0px;
+    margin-bottom: -50px;
+    width: 98%;
+  }
+  #total {
+    display: flex;
+    color: black;
+    font-size: 12px;
+    font-weight: 550;
+    margin-bottom: -20px;
+  }
+  #final {
+    text-align: right;
+    font-size: 10px;
+    color: grey;
+    margin-right: 30px;
+    margin-top: 20px;
+  }
+  #continue {
+    background-color: black;
+    color: white;
+    font-weight: 550;
+    border: none;
+    width: 250px;
+    height: 35px;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 33px;
+    cursor: pointer;
+  }
+  #total-amount {
+    margin-left: 20px;
+  }
+  h3 {
+    margin-top: 150px;
+  }
+  nav {
+    margin-top: -140px;
+  }

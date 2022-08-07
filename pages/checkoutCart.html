@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart</title>
+    <title>Checkout</title>
     <link
       rel="icon"
       href="https://w7.pngwing.com/pngs/39/910/png-transparent-zara-fashion-clothes-clothing-brands-and-logos-icon.png"
@@ -12,25 +12,15 @@
     />
     <link rel="stylesheet" href="../styles/navbar.css" />
     <link rel="stylesheet" href="../styles/footer.css" />
-    <link rel="stylesheet" href="../styles/userCart.css" />
+    <link rel="stylesheet" href="../styles/checkoutCart.css" />
   </head>
   <body>
     <nav id="navbar"></nav>
-    <h3>SHOPPING BAG</h3>
-    <div id="cartContainer"></div>
+    <div id="container"></div>
 
-    <div id="cartContainer2">
-      <div id="final">
-        <div id="total">
-          <p>TOTAL</p>
-          <p id="total-amount"></p>
-        </div>
-        <p style="margin-bottom: 0px">INCLUDING GST</p>
-        <p style="margin-top: 0px">* EXCL SHIPPING COST</p>
-      </div>
-      <div>
-        <a href="checkoutCart.html"><button id="continue">CONTINUE</button></a>
-      </div>
+    <div class="checkout">
+      <div id="#total_price"></div>
+      <div id="payBOX" onclick="paymentSuccess()">FINISH PAYMENT</div>
     </div>
     <div id="footer"></div>
   </body>
@@ -45,5 +35,4 @@
   let footer_container = document.getElementById("footer");
   footer_container.innerHTML = footer();
 </script>
-
-<script src="../scripts/userCart.js"></script>
+<script src="../scripts/checkoutCart.js"></script>
