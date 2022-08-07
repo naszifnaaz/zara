@@ -18,7 +18,7 @@ function navbar() {
     </div>
     <div id="nav-items">
       <ul>
-        <li class="nav_item"><a class="navLinks" href=""></a> </li>
+        <li class="nav_item"><a class="navLinks" id="user-name" href="../pages/userLogin.html"></a> </li>
         <li class="nav_item" id="help"><a class="navLinks" href="">HELP</a> </li>
         <li class="nav_item" id="last-nav"><a class="navLinks" href="../pages/userCart.html">CART</a> </li>
       </ul>

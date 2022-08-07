@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .formgroup {
+    margin-top: 1em;
+    transition: all 0.3s;
+    /* border:1px solid red; */
+  }
+  .form-label {
+    display: block;
+    transform: translateY(-1.8em);
+    transform-origin: 0 0;
+    transition: all 0.3s;
+    font-size: 10px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .form-input {
+    width: 90%;
+    border-style: none none solid none;
+    border-bottom: 1px solid;
+    outline: none;
+  }
+  .form-input::placeholder {
+    color: transparent;
+  }
+  .form-input:focus + .form-label,
+  .form-input:not(:placeholder-shown) + .form-label {
+    transform: translateY(-3em);
+    transition: all 0.3s;
+  }
+  
+  span {
+    text-decoration: underline;
+  }
+  
+  #wholeform {
+    /* border:1px solid rgb(0, 23, 128); */
+    width: 860px;
+    margin-left: 18%;
+  }
+  #sub1 {
+    /* border:1px solid green; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  #sub2 {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-gap: 0%;
+  }
+  #sub2 .prefix {
+    width: 65%;
+    padding-right: 3%;
+    /* border:1px solid red; */
+  }
+  #sub2 .postfix {
+    width: 100%;
+    padding-left: 1%;
+  }
+  #sub3 > div {
+    padding: 1% 0% 1% 0%;
+  }
+  #createaccount {
+    width: 400px;
+    height: 35px;
+    border: 0px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 4%;
+  }
+  label {
+    color: grey;
+    font-family: inherit;
+    font-size: 10px;
+  }
+  .black {
+    color: black;
+    font-weight: normal;
+    font-size: 13px;
+  }
+  select {
+    border-style: none none solid none;
+    width: 90%;
+  }
+  #footer {
+    /* border:1px solid rgb(0, 23, 128); */
+  
+    margin-left: 13.5%;
+  }

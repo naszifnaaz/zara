@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZARA India</title>
+    <link
+      rel="icon"
+      href="https://w7.pngwing.com/pngs/39/910/png-transparent-zara-fashion-clothes-clothing-brands-and-logos-icon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/userLogin.css" />
+  </head>
+
+  <body>
+    <nav id="navbar"></nav>
+
+    <div id="container">
+      <div id="login">
+        <h2 id="h1">LOG IN</h2>
+        <form action="">
+          <div class="form-group">
+            <input
+              type="text"
+              id="mail"
+              placeholder="email"
+              autocomplete="off"
+              class="form-control"
+              required
+            />
+            <label for="" class="form-label">E-MAIL</label>
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              id="pwd"
+              placeholder="password"
+              class="form-control"
+              required
+            />
+            <label for="" class="form-label">PASSWORD</label>
+          </div>
+          <p id="p">HAVE YOU FORGOTTEN YOUR PASSWORD?</p>
+          <input type="submit" value="LOG IN" id="sub" />
+        </form>
+      </div>
+
+      <div id="reg">
+        <h2 id="h2">REGISTER</h2>
+        <p id="p1">
+          IF YOU STILL DON'T HAVE A ZARA.COM ACCOUNT, USE THIS OPTION TO ACCESS
+          THE REGISTRATION FORM.
+        </p>
+        <p id="p2">
+          BY GIVING US YOUR DETAILS, PURCHASING IN ZARA.COM WILL BE FASTER AND
+          AN ENJOYABLE EXPERIENCE.
+        </p>
+        <button id="create">CREATE ACCOUNT</button>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>
+
+<script type="module">
+  import navbar from "../scripts/navbar.js";
+  let nav_container = document.getElementById("navbar");
+  nav_container.innerHTML = navbar();
+
+  import footer from "../scripts/footer.js";
+  let footer_container = document.getElementById("footer");
+  footer_container.innerHTML = footer();
+</script>
+
+<script src="../scripts/userAuth.js"></script>

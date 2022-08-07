@@ -5,7 +5,7 @@ body {
   }
   nav {
     position: fixed;
-    width: 100vw;
+    width: 100%;
   }
   nav {
     margin-top: 15px;
