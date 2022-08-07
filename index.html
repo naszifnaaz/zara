@@ -93,6 +93,15 @@
   import footer from "../scripts/footer.js";
   let footer_container = document.getElementById("footer");
   footer_container.innerHTML = footer();
+
+  let kyc = localStorage.getItem("kyc") || [];
+  let action = document.getElementById("user-name");
+  console.log(action);
+  if (kyc.length == 0) {
+    action.innerText = " LOG IN";
+  } else {
+    action.innerText = " SIGN OUT";
+  }
 </script>
 
 <script>
