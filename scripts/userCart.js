@@ -62,3 +62,13 @@ function displayData(product) {
     }
     document.querySelector("#total-amount").textContent = `₹ ${total}.00`;
 }
+
+function checkoutValidation() {
+    let isUser = localStorage.getItem("kyc") || [];
+    if (isUser.length == 0) {
+        alert('Please sign in to continue');
+        window.location.href = "userLogin.html";
+    }
+    else
+        window.location.href = "checkoutCart.html"
+}
