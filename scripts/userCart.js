@@ -69,6 +69,8 @@ function checkoutValidation() {
         alert('Please sign in to continue');
         window.location.href = "userLogin.html";
     }
+    else if (product.length == 0)
+        alert('Cart empty!');
     else
         window.location.href = "checkoutCart.html"
 }
