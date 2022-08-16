@@ -1,74 +1,89 @@
-html{
-    scroll-behavior:smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
 }
 
-#newsletter{
-    width: 100%;
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#newsletter {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-  }
-
-  img{
-    max-width: 100%;
-    height: auto;
-  }
-
-  .view1 {
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    cursor: pointer;
-  }
-
-.view-2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    cursor: pointer;
+  margin: 0;
+  padding: 0;
 }
 
-#external-links a{
-    text-decoration: none;
-    color: black;
-    font-size: 0.7rem;
-    margin-top: 1rem;
-    font-weight: lighter;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-#external-links
-{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.view1-desktop {
+  background: url("https://static.zara.net/photos///contents/mkt/spots/aw22-north-kids-back-to-school/subhome-xmedia-02//w/1920/IMAGE-landscape-fill-3ca3ce48-bd38-4a53-9982-5f8a7ef77f1d-default_0.jpg?ts=1660317767007");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
 }
 
-#calltoaction{
-    font-weight: 500;
-    margin: 0 3rem;
+.view2-desktop {
+  background: url("https://static.zara.net/photos///contents/mkt/spots/aw22-kids-kids/subhome-xmedia-32-2//w/1920/IMAGE-landscape-fill-cb0dd553-06b8-44fd-957e-e5e0da38581f-default_0.jpg?ts=1660316924752");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.view3-desktop {
+  background: url("https://static.zara.net/photos///contents/mkt/spots/aw22-north-kids-join-life/subhome-xmedia-32//w/1920/IMAGE-landscape-fill-9b61291d-2a9f-40e0-b28d-8f3992245600-default_0.jpg?ts=1659980906614");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.fixed-links {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#external-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.7rem;
+  margin-top: 1rem;
+  font-weight: lighter;
+}
+
+#external-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#calltoaction {
+  font-weight: 500;
+  margin: 0 3rem;
 }
 
 @media only screen and (max-width: 700px) {
-    #view-1{
-        display: none;
-    }
-
-    #calltoaction{
-        font-weight: 500;
-        margin: 0 3rem;
-        font-size: 1.5rem;
-    }
-    
+  #calltoaction {
+    font-weight: 500;
+    margin: 0 3rem;
+    font-size: 1.5rem;
   }
+
+  #calltoaction {
+    font-size: 1rem;
+  }
+
+  #external-links {
+    flex-direction: column;
+  }
+}

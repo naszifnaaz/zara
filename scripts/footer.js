@@ -1,8 +1,8 @@
 //Footer component
 
 function footer() {
-    return `<div id="about">
-    <div>
+  return `<div id="about">
+    <div id="help">
       <ul>
         <li class="head">HELP</li>
         <li>SHOP AT ZARA.COM</li>
@@ -48,7 +48,7 @@ function footer() {
       </ul>
     </div>
   </div>
-  <hr style="width: 90%" />
+  <hr style="width: 100%; margin:1rem 0" />
 
   <div id="copy">
     <h6>INDIA</h6>

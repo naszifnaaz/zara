@@ -51,6 +51,7 @@ function creattable(ele) {
     a3.textContent = "Delivery, Exchanges and Returns";
 
     var btn = document.createElement("button");
+    btn.setAttribute("class", "addtocart")
     btn.textContent = "Add To Cart";
     btn.addEventListener("click", function () {
         cartarr.push(ele);

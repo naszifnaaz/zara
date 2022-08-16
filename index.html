@@ -16,57 +16,9 @@
   </head>
   <body>
     <nav id="navbar"></nav>
-    <div id="view-1" onclick="redirect()">
-      <img
-        src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-man-new/subhome-xmedia-31//w/1920/IMAGE-landscape-fill-37cd0f09-64cd-433e-8c04-46bd95a52807-default_0.jpg?ts=1659535191343"
-        alt="view1"
-        class="view1"
-      />
-    </div>
-    <div class="view-2" onclick="redirect()">
-      <picture>
-        <source
-          media="(min-width:650px)"
-          srcset="
-            https://static.zara.net/photos///contents/mkt/spots/aw22-thread-of-love-rakhi/subhome-xmedia-man//w/1188/IMAGE-landscape-5d8b5e93-d8f8-4ed9-9ea5-efd2efe4d0f1-default_0.jpg?ts=1659605145800
-          "
-        />
-        <source
-          media="(min-width:465px)"
-          srcset="
-            https://static.zara.net/photos///2022/I/0/2/p/3037/305/250/2/w/614/3037305250_2_4_1.jpg?ts=1658912570872
-          "
-        />
-        <img
-          src="https://static.zara.net/photos///contents/mkt/spots/aw22-thread-of-love-rakhi/subhome-xmedia-man//w/1188/IMAGE-landscape-5d8b5e93-d8f8-4ed9-9ea5-efd2efe4d0f1-default_0.jpg?ts=1659605145800"
-          alt="view"
-          style="width: auto"
-        />
-      </picture>
-    </div>
-
-    <div class="view-2" onclick="redirect()">
-      <picture>
-        <source
-          media="(min-width:650px)"
-          srcset="
-            https://static.zara.net/photos///contents/mkt/spots/aw22-north-man-beachwear/subhome-xmedia-30//w/1188/IMAGE-landscape-77f21d8e-3cf2-430c-89c3-dc73094cbaca-default_0.jpg?ts=1659097528834
-          "
-        />
-        <source
-          media="(min-width:465px)"
-          srcset="
-            https://static.zara.net/photos///2022/I/0/2/p/3037/301/400/2/w/387/3037301400_1_1_1.jpg?ts=1658851563684
-          "
-        />
-        <img
-          src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-man-beachwear/subhome-xmedia-30//w/1188/IMAGE-landscape-77f21d8e-3cf2-430c-89c3-dc73094cbaca-default_0.jpg?ts=1659097528834"
-          alt="view"
-          style="width: auto"
-        />
-      </picture>
-    </div>
-
+    <div class="view2-desktop"></div>
+    <div class="view3-desktop"></div>
+    <div class="view1-desktop"></div>
     <div id="newsletter">
       <div>
         <h1 id="calltoaction">JOIN OUR NEWSLETTER</h1>
@@ -101,12 +53,5 @@
     action.innerText = " LOG IN";
   } else {
     action.innerText = " SIGN OUT";
-  }
-</script>
-
-<script>
-  function redirect() {
-    window.location.href = "./pages/menStyles.html";
-    console.log("hello");
   }
 </script>
