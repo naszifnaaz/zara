@@ -23,11 +23,13 @@ function creattable(ele) {
     pmrp.setAttribute("class", "realprice");
 
     var p4 = document.createElement("p");
+    p4.setAttribute("class", "mrp");
     p4.textContent = "MRP incl. of all taxes";
     p4.style.marginBottom = 0;
     var p5 = document.createElement("p");
     p5.style.marginBottom = 0;
     p5.textContent = "Colour Natural | 0706/331";
+    p5.setAttribute("class", "mrp");
 
     var select1 = document.createElement("select");
     var option1 = document.createElement("option");
