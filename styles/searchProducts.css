@@ -1,0 +1,30 @@
+.search-form {
+  position: relative;
+  top: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  margin: 5px 7px;
+}
+
+#query {
+  width: 80vw;
+  padding: 7px 15px;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+#container {
+  position: relative !important;
+  top: 10rem !important;
+  overflow-y: scroll !important;
+  height: 80vh;
+}
