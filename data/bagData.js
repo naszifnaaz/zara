@@ -1,7 +1,4 @@
 //Bags Data
-bagData.map(function (el) {
-
-})
 const bagData = [
     {
         imageURL:
