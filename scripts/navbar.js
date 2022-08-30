@@ -13,7 +13,7 @@ function navbar() {
   </div>
   <div id="nav-bar-right">
     <div id="search_bar">
-        <label class="navLabel" for="search">SEARCH</label>
+        <label class="navLabel" for="search"><a href="../pages/searchProducts.html">SEARCH</a></label>
         <p id="search"></p>
     </div>
     <div id="nav-items">

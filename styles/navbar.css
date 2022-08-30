@@ -7,6 +7,11 @@ nav {
   position: fixed;
   width: 100%;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
 nav {
   margin-top: 15px;
   display: flex;
